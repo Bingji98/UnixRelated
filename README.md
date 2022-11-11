@@ -21,8 +21,8 @@ If you also want to have autocompletions on commands with a common prefix, and a
 set show-all-if-ambiguous on
 TAB:menu-complete
 set menu-complete-display-prefix on
-set colored-completion-prefix on
-set colored-stats on
+set colored-completion-prefix on  # requires bash 4.4+
+set colored-stats on  # requires bash 4.4+
 set completion-ignore-case on
 ```
 
