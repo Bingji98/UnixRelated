@@ -5,7 +5,7 @@
 
 # Table of Contents
 1. [Bash-completion](#bc)
-
+2. [Bash Prompt and Colors](#bpc)
 
 # Bash-completion <a name="bc"></a>
 In bash, when using "tab" to complete commands, we may end up only showing different possibilities, but not being able to choose any of them. If you want it to work similarly as it is in zsh, you could execute the next commands:
@@ -25,3 +25,7 @@ set colored-completion-prefix on
 set colored-stats on
 set completion-ignore-case on
 ```
+
+# Bash Prompt and Colors <a name="bpc"></a>
+
+For general settings, please refer to [Bash - Prompt and Colors](https://blog.while-true-do.io/bash-prompt-and-colors/).
