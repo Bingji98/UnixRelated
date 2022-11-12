@@ -6,6 +6,7 @@
 # Table of Contents
 1. [Bash-completion](#bc)
 2. [Bash Prompt and Colors](#bpc)
+3. [Check Current Shell](#ccs)
 
 # Bash-completion <a name="bc"></a>
 In bash, when using "tab" to complete commands, we may end up only showing different possibilities, but not being able to choose any of them. If you want it to work similarly as it is in zsh, you could execute the next commands:
@@ -29,3 +30,6 @@ set completion-ignore-case on
 # Bash Prompt and Colors <a name="bpc"></a>
 
 For general settings, please refer to [Bash - Prompt and Colors](https://blog.while-true-do.io/bash-prompt-and-colors/).
+
+# Check current shell <a name="ccs"></a>
+There are many different ways to display your current shell [Different Ways to Check Which Shell You are Using](https://www.geeksforgeeks.org/different-ways-to-check-which-shell-you-are-using-on-linux/), and the simplest way is using `readlink /proc/$$/exe`.
