@@ -38,3 +38,28 @@ There are many different ways to display your current shell [Different Ways to C
 # ZSH <a name="zsh"></a>
 If you want to switch your shell to zsh, bash, sh, etc., use the command `chsh -s /bin/zsh`. The operation might fail if you don't have the access, and you will end up with `You may not change the shell for 'XXX'`. Then, go ask for root permission. 
 
+Oh My Zsh is a delightful, open source, community-driven framework for managing your Zsh configuration. It's really a great partner if you want to make your life easier with zsh. You can install oh-my-zsh via the command-line bellow:
+
+```bash
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+
+However, many times it will report an error: `git clone of oh-my-zsh repo failed`. In this case, you have to install it manually.
+
+```bash
+# step 1 
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+# step 2 
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+# step 3 
+chsh -s $(which zsh)
+```
+
+While doing this, another error might be raised: `Peer’s certificate issuer has been marked as not trusted by the user`. This error would come when you try to use git URL with a self-signed certificate. For this, you need to set SSL verify to false in your git config. You can do this in two ways:
+```bash
+# 1. Set SSL Verify to false only for specific repo:
+git config http.sslVerify false
+
+# 2. Set SSL Verify to false Globally:
+git config --global http.sslVerify false
+```
