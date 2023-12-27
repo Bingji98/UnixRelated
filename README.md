@@ -8,6 +8,7 @@
 2. [Bash Prompt and Colors](#bpc)
 3. [Check Current Shell](#ccs)
 4. [ZSH](#zsh)
+5. [Use chsh command](#uchcd)
 
 # Bash-completion <a name="bc"></a>
 In bash, when using "tab" to complete commands, we may end up only showing different possibilities, but not being able to choose any of them. If you want it to work similarly as it is in zsh, you could execute the next commands:
@@ -64,7 +65,7 @@ git config http.sslVerify false
 git config --global http.sslVerify false
 ```
 
-# Use chsh command <a name="zsh"></a>
+# Use chsh command <a name="uchcd"></a>
 
 ```bash
 yum install util-linux-user
