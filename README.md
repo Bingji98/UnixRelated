@@ -63,3 +63,9 @@ git config http.sslVerify false
 # 2. Set SSL Verify to false Globally:
 git config --global http.sslVerify false
 ```
+
+# Use chsh command <a name="zsh"></a>
+
+```bash
+yum install util-linux-user
+```
